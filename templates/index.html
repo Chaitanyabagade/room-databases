@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+
+        <link rel="stylesheet" type="text/css" href="main.css" /> 
+    </head>
+    
+<body>  
+    <h1 class="ram"> ram bagader</h1>
+{% if number|length > 0 %}    {% for n in number %} 
+        {% if n > 20 %}
+           <div>{{n}}</div>
+        {% endif %}
+    {% endfor %}
+{% else %}
+      no element found this page in empty
+{% endif%}
+    
+</body>
+</html>
